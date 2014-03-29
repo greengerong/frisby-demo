@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="Frisby Test: Get Brightbit Facebook Page" errors="0" tests="1" failures="0" time="0.845" timestamp="2014-03-29T13:31:43">
+  <testcase classname="Frisby Test: Get Brightbit Facebook Page" name="
+	[ GET https://graph.facebook.com/111848702235277 ]" time="0.844"></testcase>
+</testsuite>
+</testsuites>

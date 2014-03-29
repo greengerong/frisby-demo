@@ -1,0 +1,14 @@
+{
+  "name": "frisby-demo",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node ./test/  --junitreport"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "frisby": "~0.8.0"
+  }
+}
