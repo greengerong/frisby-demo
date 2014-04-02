@@ -2,46 +2,14 @@
  * frisby.js: Twitter Example
  * (C) 2012, Vance Lucas
  */
-var frisby = require('frisby');
+var api = require('./common/common')();
 
+api.run("Should get usr form server", function(frisby){
 
-// Global setup for all tests
-frisby.globalSetup({
-  request: {
-    headers:{'Accept': 'application/json'}
-  }
+      frisby
+      .inspectRequest()
+      .get(api.url("/user"))
+      .expectStatus(200)
+      .toss();
+
 });
-
-
-frisby.create('Get Brightbit Facebook Page')
-  .get('https://graph.facebook.com/111848702235277')
-  .expectStatus(200)
-  .expectHeaderContains('content-type', 'application/json')
-  .expectJSONTypes({
-    id: String,
-    likes: Number,
-    is_published: Boolean
-  })
-  .expectJSON({
-    id: "111848702235277",
-    website: "http://brightb.it"
-  })
-.toss();
-
-
-// Test error reponse
-frisby.create('Get Brightbit Facebook Page Likes')
-  .get('https://graph.facebook.com/111848702235277/likes')
-  .expectStatus(400)
-  .expectJSONTypes({
-    error: {
-      message: String,
-      type: String
-    }
-  })
-  .expectJSON({
-    error: {
-      type: "OAuthException"
-    }
-  })
-.toss();

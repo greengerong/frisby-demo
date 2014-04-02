@@ -1,14 +1,19 @@
 {
-  "name": "frisby-demo",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "test": "jasmine-node ./test/  --junitreport"
+    "start": "node app.js"
   },
-  "author": "",
-  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "3.4.4"
+  },
   "devDependencies": {
-    "frisby": "~0.8.0"
+    "frisby": "~0.8.0",
+    "grunt": "~0.4.4",
+    "grunt-express": "~1.2.1",
+    "matchdep": "~0.3.0",
+    "grunt-contrib-jasmine": "~0.6.3",
+    "grunt-shell": "~0.6.4"
   }
 }

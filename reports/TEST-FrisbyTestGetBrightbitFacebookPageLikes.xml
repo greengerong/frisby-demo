@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-<testsuite name="Frisby Test: Get Brightbit Facebook Page Likes" errors="0" tests="1" failures="0" time="0.766" timestamp="2014-03-29T13:31:44">
+<testsuite name="Frisby Test: Get Brightbit Facebook Page Likes" errors="0" tests="1" failures="0" time="0.827" timestamp="2014-04-02T21:04:40">
   <testcase classname="Frisby Test: Get Brightbit Facebook Page Likes" name="
-	[ GET https://graph.facebook.com/111848702235277/likes ]" time="0.766"></testcase>
+	[ GET https://graph.facebook.com/111848702235277/likes ]" time="0.827"></testcase>
 </testsuite>
 </testsuites>
